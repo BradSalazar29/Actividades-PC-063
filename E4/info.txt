@@ -1,0 +1,4 @@
+Linux
+Node with IP: 127.0.0.1 is up.
+Node with IP: www.google.com is up.
+www.google.com 80 open
