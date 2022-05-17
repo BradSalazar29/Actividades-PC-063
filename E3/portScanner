@@ -1,0 +1,11 @@
+#!/bin/bash 
+host=$(<ips.txt) 
+firstport=79 
+lastport=80
+function portscan { 
+for ((counter=$firstport; counter<=$lastport; counter++)) 
+do 
+	(echo >/dev/tcp/$host/$counter) > /dev/null 2>&1 && echo "$counter open" 
+done 
+}
+portscan 
